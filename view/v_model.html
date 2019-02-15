@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Study</title>
+</head>
+<body>
+
+    <div id="app">
+        <div>
+            <input type="" v-model="name"> {{name}}
+        </div>
+
+        <div>
+            <input type="" v-model.trim="sex"> {{sex}}
+        </div>
+
+        <div>
+             <input type="" v-model.lazy="age"> {{age}}
+        </div>
+
+        <div>
+             <input type="" v-model.number="price"> {{price}}
+        </div>
+
+        <div>
+             <label><input type="radio" value="1" v-model="grade">一年级</label>
+             <label><input type="radio" value="2" v-model="grade">二年级</label>
+        </div>
+        <br>
+        {{grade}}
+        <br>
+        <div>
+             <select v-model="hobby">
+                 <option value="A">A</option>
+                 <option value="B">B</option>
+                 <option value="C">C</option>
+                 <option value="D">D</option>
+                 <option value="E">E</option>
+             </select>
+             <br>
+        </div>
+        <br>
+        {{hobby}}
+        <br>
+        <br>
+        <div>
+             <label><input type="checkbox" value="a" v-model="cartoon">a</label>
+             <label><input type="checkbox" value="b" v-model="cartoon">b</label>
+             <label><input type="checkbox" value="c" v-model="cartoon">c</label>
+             <label><input type="checkbox" value="d" v-model="cartoon">d</label>
+        </div>
+        <br>
+        {{cartoon}}
+        <br>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/v_model.js"></script>
+</body>
+</html>

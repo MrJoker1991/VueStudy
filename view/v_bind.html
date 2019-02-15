@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Study</title>
+    <style type="text/css">
+        .bg {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <div>
+            <a :href="url" :class="klass">点我</a>
+        </div>
+
+        <div>
+            <a :href="url" :class="{bg: isActive}">点他</a>
+        </div>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/v_bind.js"></script>
+</body>
+</html>

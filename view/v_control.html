@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Study</title>
+</head>
+<body>
+
+    <div id="app">
+        {{identity}}
+        <div>
+            <div v-if="identity == 'admin'">
+                管理员你好
+            </div>
+
+            <div v-else-if="identity == 'rd'">
+                开发人员好
+            </div>
+
+            <div v-else>
+                你没有权限
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/v_control.js"></script>
+</body>
+</html>

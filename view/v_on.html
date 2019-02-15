@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Study</title>
+</head>
+<body>
+
+    <div id="app">
+        <div>
+            <button v-on:click="onClick"> 点我 </button>
+        </div>
+
+        <div>
+            <button v-on="{mouseenter: mouseEnter, mouseleave: mouserLeave}"> 盘他 </button>
+        </div>
+
+        <div>
+            <form v-on:submit="onSubmit11($event)">
+                <input type="text" name="name">
+                <button type="submit">提交11</button>
+            </form>
+        </div>  
+
+        <div>
+            <form v-on:submit.prevent="onSubmit22()">
+                <input type="text" name="name">
+                <button type="submit">提交22</button>
+            </form>
+        </div>
+
+        <div>
+            <form @keyup.enter="onKeyUp($event)" @submit.prevent="onSubmit22()">
+                姓名： <input type="text" name="name">
+                年龄： <input type="text" name="name">
+                <button type="submit">提交</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/v_on.js"></script>
+</body>
+</html>
